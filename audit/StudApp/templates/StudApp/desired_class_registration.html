@@ -325,277 +325,695 @@
 		
 			</nav>
 
-			<main class="content">
+			<main class="content" style="padding-top: 0px; padding-left: 0px; padding-right: 0px;">
+
 				<!--
-				<div class="container-fluid p-0">c
+				<div class="container" style="margin-left: 0px; margin-right: 0px;">
+				청강 신청
+				</div>
+				!-->
 
-					<h1 class="h3 mb-3"><strong>Analytics</strong> Dashboard</h1>
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="bell"></i>
+									<span class="indicator">4</span>
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="alertsDropdown">
+								<div class="dropdown-menu-header">
+									4 New Notifications
+								</div>
+								<div class="list-group">
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-danger" data-feather="alert-circle"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Update completed</div>
+												<div class="text-muted small mt-1">Restart server 12 to complete the update.</div>
+												<div class="text-muted small mt-1">30m ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-warning" data-feather="bell"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Lorem ipsum</div>
+												<div class="text-muted small mt-1">Aliquam ex eros, imperdiet vulputate hendrerit et.</div>
+												<div class="text-muted small mt-1">2h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-primary" data-feather="home"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Login from 192.186.1.8</div>
+												<div class="text-muted small mt-1">5h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-success" data-feather="user-plus"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">New connection</div>
+												<div class="text-muted small mt-1">Christina accepted your request.</div>
+												<div class="text-muted small mt-1">14h ago</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="dropdown-menu-footer">
+									<a href="#" class="text-muted">Show all notifications</a>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle" href="#" id="messagesDropdown" data-bs-toggle="dropdown">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="message-square"></i>
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="messagesDropdown">
+								<div class="dropdown-menu-header">
+									<div class="position-relative">
+										4 New Messages
+									</div>
+								</div>
+								<div class="list-group">
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-5.jpg" class="avatar img-fluid rounded-circle" alt="Vanessa Tucker">
+											</div>
+											<div class="col-10 ps-2">
+												<div class="text-dark">Vanessa Tucker</div>
+												<div class="text-muted small mt-1">Nam pretium turpis et arcu. Duis arcu tortor.</div>
+												<div class="text-muted small mt-1">15m ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-2.jpg" class="avatar img-fluid rounded-circle" alt="William Harris">
+											</div>
+											<div class="col-10 ps-2">
+												<div class="text-dark">William Harris</div>
+												<div class="text-muted small mt-1">Curabitur ligula sapien euismod vitae.</div>
+												<div class="text-muted small mt-1">2h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-4.jpg" class="avatar img-fluid rounded-circle" alt="Christina Mason">
+											</div>
+											<div class="col-10 ps-2">
+												<div class="text-dark">Christina Mason</div>
+												<div class="text-muted small mt-1">Pellentesque auctor neque nec urna.</div>
+												<div class="text-muted small mt-1">4h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-3.jpg" class="avatar img-fluid rounded-circle" alt="Sharon Lessman">
+											</div>
+											<div class="col-10 ps-2">
+												<div class="text-dark">Sharon Lessman</div>
+												<div class="text-muted small mt-1">Aenean tellus metus, bibendum sed, posuere ac, mattis non.</div>
+												<div class="text-muted small mt-1">5h ago</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="dropdown-menu-footer">
+									<a href="#" class="text-muted">Show all messages</a>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown">
+                <i class="align-middle" data-feather="settings"></i>
+              </a>
 
+							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
+                <img src="img/avatars/avatar.jpg" class="avatar img-fluid rounded me-1" alt="Charles Hall" /> <span class="text-dark">Charles Hall</span>
+              </a>
+							<div class="dropdown-menu dropdown-menu-end">
+								<a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="pie-chart"></i> Analytics</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="index.html"><i class="align-middle me-1" data-feather="settings"></i> Settings & Privacy</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i> Help Center</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Log out</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<main class="content">
+				<div class="container-fluid p-0">
+
+					<div class="mb-3">
+						<h1 class="h3 d-inline align-middle">청강 신청</h1>
+						
+					</div>
 					<div class="row">
-						<div class="col-xl-6 col-xxl-5 d-flex">
-							<div class="w-100">
-								<div class="row">
-									<div class="col-sm-6">
-										<div class="card">
-											<div class="card-body">
-												<div class="row">
-													<div class="col mt-0">
-														<h5 class="card-title">Sales</h5>
-													</div>
+						<div class="col-md-4 col-xl-3">
 
-													<div class="col-auto">
-														<div class="stat text-primary">
-															<i class="align-middle" data-feather="truck"></i>
-														</div>
-													</div>
-												</div>
-												<h1 class="mt-1 mb-3">2.382</h1>
-												<div class="mb-0">
-													<span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> -3.65% </span>
-													<span class="text-muted">Since last week</span>
-												</div>
-											</div>
-										</div>
-										<div class="card">
-											<div class="card-body">
-												<div class="row">
-													<div class="col mt-0">
-														<h5 class="card-title">Visitors</h5>
-													</div>
+							<!-- 필터 div 파트 !-->
 
-													<div class="col-auto">
-														<div class="stat text-primary">
-															<i class="align-middle" data-feather="users"></i>
-														</div>
-													</div>
-												</div>
-												<h1 class="mt-1 mb-3">14.212</h1>
-												<div class="mb-0">
-													<span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i> 5.25% </span>
-													<span class="text-muted">Since last week</span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-6">
-										<div class="card">
-											<div class="card-body">
-												<div class="row">
-													<div class="col mt-0">
-														<h5 class="card-title">Earnings</h5>
-													</div>
-
-													<div class="col-auto">
-														<div class="stat text-primary">
-															<i class="align-middle" data-feather="dollar-sign"></i>
-														</div>
-													</div>
-												</div>
-												<h1 class="mt-1 mb-3">$21.300</h1>
-												<div class="mb-0">
-													<span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i> 6.65% </span>
-													<span class="text-muted">Since last week</span>
-												</div>
-											</div>
-										</div>
-										<div class="card">
-											<div class="card-body">
-												<div class="row">
-													<div class="col mt-0">
-														<h5 class="card-title">Orders</h5>
-													</div>
-
-													<div class="col-auto">
-														<div class="stat text-primary">
-															<i class="align-middle" data-feather="shopping-cart"></i>
-														</div>
-													</div>
-												</div>
-												<h1 class="mt-1 mb-3">64</h1>
-												<div class="mb-0">
-													<span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> -2.25% </span>
-													<span class="text-muted">Since last week</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-xl-6 col-xxl-7">
-							<div class="card flex-fill w-100">
+							<div class="card mb-3">
 								<div class="card-header">
-
-									<h5 class="card-title mb-0">Recent Movement</h5>
+									<h5 class="card-title mb-0">필터</h5>
 								</div>
-								<div class="card-body py-3">
-									<div class="chart chart-sm">
-										<canvas id="chartjs-dashboard-line"></canvas>
+
+								<div class="card-body" style= "padding-bottom: 5px;">
+
+								<label class="form-label" style = "margin-bottom: 15px;">대학/학과</label>
+									
+									<select class="form-select mb-3">
+          <option selected>단과대학 선택</option>
+          <option>One</option>
+          <option>Two</option>
+          <option>Three</option>
+		  							</select>
+
+									<select class="form-select mb-3">
+          <option selected>학과/학부/전공 선택</option>
+          <option>One</option>
+          <option>Two</option>
+          <option>Three</option>
+									</select>
+
+									<hr class="my-0" />
+								</div>
+
+								
+								<div class="card-body" style= "padding-bottom: 5px;">
+									<label class="form-label" style = "margin-bottom: 15px;">학년</label>
+									
+									<div>
+										<label class="form-check" style="padding-bottom: 10px;">
+            <input class="form-check-input" type="checkbox" value="">
+            <span class="form-check-label">
+              1학년
+            </span>
+          </label>
+
+		  								<label class="form-check" style="padding-bottom: 10px;">
+            <input class="form-check-input" type="checkbox" value="">
+            <span class="form-check-label">
+              2학년
+            </span>
+          </label>
+		  
+		  								<label class="form-check" style="padding-bottom: 10px;">
+            <input class="form-check-input" type="checkbox" value="">
+            <span class="form-check-label">
+              3학년
+            </span>
+          </label>
+
+		  								<label class="form-check" style="padding-bottom: 10px;">
+            <input class="form-check-input" type="checkbox" value="">
+            <span class="form-check-label">
+              4학년
+            </span>
+          </label>
+
+		  								<label class="form-check" style="padding-bottom: 10px;">
+            <input class="form-check-input" type="checkbox" value="">
+            <span class="form-check-label">
+              5학년
+            </span>
+          </label>
+
+		  								<label class="form-check" style="padding-bottom: 10px;">
+            <input class="form-check-input" type="checkbox" value="">
+            <span class="form-check-label">
+              전체 학년
+            </span>
+          </label>							
 									</div>
+									<hr class="my-0" />
+								</div>
+								
+								<div class="card-body" style= "padding-bottom: 5px;">
+									<label class="form-label" style = "margin-bottom: 15px;">이수구분</label>
+									<div>
+										<label class="form-check" style="padding-bottom: 10px;">
+            <input class="form-check-input" type="checkbox" value="">
+            <span class="form-check-label">
+              전공
+            </span>
+          </label>
+
+		  								<label class="form-check" style="padding-bottom: 10px;">
+            <input class="form-check-input" type="checkbox" value="">
+            <span class="form-check-label">
+              교양
+            </span>
+          </label>							
+									</div>
+									<hr class="my-0" />
+								</div>
+
+								
+								<div class="card-body">
+									<label class="form-label" style = "margin-bottom: 15px;">검색</label>
+										
+										<input type="text" class="form-control" placeholder="교과목명">
+
+										<a class="btn btn-primary" style="float: right; margin-top: 15px;">조회</a>
+
 								</div>
 							</div>
+
+							<!-- 정렬 div 파트 !-->
+
+							<div class="card mb-3">
+								<div class="card-header">
+									<h5 class="card-title mb-0">정렬</h5>
+								</div>
+
+								<div class="card-body">
+
+								<label class="form-label" style = "margin-bottom: 15px;">교과목명</label>
+
+								<div>
+										<label class="form-check" style="padding-bottom: 10px;">
+            <input class="form-check-input" type="radio" value="option1" name="radios-example" checked>
+            <span class="form-check-label">
+              오름차순
+            </span>
+          </label>
+
+		  								<label class="form-check" style="padding-bottom: 10px;">
+            <input class="form-check-input" type="radio" value="option1" name="radios-example" checked>
+            <span class="form-check-label">
+              내림차순
+            </span>
+          </label>
+										
+									</div>
+									
+									<hr class="my-0" />
+									<a class="btn btn-primary" style="float: right; margin-top: 15px;">조회</a>
+							</div>
+
 						</div>
+
 					</div>
 
-					<div class="row">
-						<div class="col-12 col-md-6 col-xxl-3 d-flex order-2 order-xxl-3">
-							<div class="card flex-fill w-100">
+					<!-- 강의 리스트 div 입니다 !-->
+					
+					<div class="col-md-8 col-xl-9">
+							<div class="card">
 								<div class="card-header">
 
-									<h5 class="card-title mb-0">Browser Usage</h5>
+									<h5 class="card-title mb-0">강의</h5>
 								</div>
-								<div class="card-body d-flex">
-									<div class="align-self-center w-100">
-										<div class="py-3">
-											<div class="chart chart-xs">
-												<canvas id="chartjs-dashboard-pie"></canvas>
-											</div>
-										</div>
+								<div class="card-body h-100">
 
-										<table class="table mb-0">
+								<div class="table-responsive table-upgrade">
+										<table class="table">
+											<thead>
+												<tr>
+													<th class="text-center">학년</th>
+													<th class="text-center">이수구분</th>
+													<th class="text-center">교과목명</th>
+													<th class="text-center">교강사</th>
+													<th class="text-center">수업형태</th>
+													<th class="text-center">수업일시</th>
+													<th class="text-center">강의실</th>
+													<th class="text-center">청강신청</th>
+												</tr>
+											</thead>
 											<tbody>
 												<tr>
-													<td>Chrome</td>
-													<td class="text-end">4306</td>
+													<td class="text-center">4</td>
+													<td class="text-center">전공</td>
+													<td class="text-center">프로그래밍 언어론</td>
+													<td class="text-center">이우석</td>
+													<td class="text-center">대면</td>
+													<td class="text-center">금 9:00 - 10:30, 금 10:30 - 12:00, 금 13:00 - 15:00</td>
+													<td class="text-center">학연산클러스터 지원센터 510호 IC-PBL AI Room1</td>
+													<td class="text-center">
+														<button class="badge btn-primary btn-sm">청강신청</button>
+													</td>
 												</tr>
 												<tr>
-													<td>Firefox</td>
-													<td class="text-end">3801</td>
+													<td class="text-center">4</td>
+													<td class="text-center">전공</td>
+													<td class="text-center">프로그래밍 언어론</td>
+													<td class="text-center">이우석</td>
+													<td class="text-center">대면</td>
+													<td class="text-center">금 9:00 - 10:30, 금 10:30 - 12:00, 금 13:00 - 15:00</td>
+													<td class="text-center">학연산클러스터 지원센터 510호 IC-PBL AI Room1</td>
+													<td class="text-center">
+														<button class="badge btn-primary btn-sm">청강신청</button>
+													</td>
 												</tr>
 												<tr>
-													<td>IE</td>
-													<td class="text-end">1689</td>
+													<td class="text-center">4</td>
+													<td class="text-center">전공</td>
+													<td class="text-center">프로그래밍 언어론</td>
+													<td class="text-center">이우석</td>
+													<td class="text-center">대면</td>
+													<td class="text-center">금 9:00 - 10:30, 금 10:30 - 12:00, 금 13:00 - 15:00</td>
+													<td class="text-center">학연산클러스터 지원센터 510호 IC-PBL AI Room1</td>
+													<td class="text-center">
+														<button class="badge btn-primary btn-sm">청강신청</button>
+													</td>
 												</tr>
+												<tr>
+													<td class="text-center">4</td>
+													<td class="text-center">전공</td>
+													<td class="text-center">프로그래밍 언어론</td>
+													<td class="text-center">이우석</td>
+													<td class="text-center">대면</td>
+													<td class="text-center">금 9:00 - 10:30, 금 10:30 - 12:00, 금 13:00 - 15:00</td>
+													<td class="text-center">학연산클러스터 지원센터 510호 IC-PBL AI Room1</td>
+													<td class="text-center">
+														<button class="badge btn-primary btn-sm">청강신청</button>
+													</td>
+												</tr>
+												<tr>
+													<td class="text-center">4</td>
+													<td class="text-center">전공</td>
+													<td class="text-center">프로그래밍 언어론</td>
+													<td class="text-center">이우석</td>
+													<td class="text-center">대면</td>
+													<td class="text-center">금 9:00 - 10:30, 금 10:30 - 12:00, 금 13:00 - 15:00</td>
+													<td class="text-center">학연산클러스터 지원센터 510호 IC-PBL AI Room1</td>
+													<td class="text-center">
+														<button class="badge btn-primary btn-sm">청강신청</button>
+													</td>
+												</tr>
+												<tr>
+													<td class="text-center">4</td>
+													<td class="text-center">전공</td>
+													<td class="text-center">프로그래밍 언어론</td>
+													<td class="text-center">이우석</td>
+													<td class="text-center">대면</td>
+													<td class="text-center">금 9:00 - 10:30, 금 10:30 - 12:00, 금 13:00 - 15:00</td>
+													<td class="text-center">학연산클러스터 지원센터 510호 IC-PBL AI Room1</td>
+													<td class="text-center">
+														<button class="badge btn-primary btn-sm">청강신청</button>
+													</td>
+												</tr>
+												<tr>
+													<td class="text-center">4</td>
+													<td class="text-center">전공</td>
+													<td class="text-center">프로그래밍 언어론</td>
+													<td class="text-center">이우석</td>
+													<td class="text-center">대면</td>
+													<td class="text-center">금 9:00 - 10:30, 금 10:30 - 12:00, 금 13:00 - 15:00</td>
+													<td class="text-center">학연산클러스터 지원센터 510호 IC-PBL AI Room1</td>
+													<td class="text-center">
+														<button class="badge btn-primary btn-sm">청강신청</button>
+													</td>
+												</tr>
+												<tr>
+													<td class="text-center">4</td>
+													<td class="text-center">전공</td>
+													<td class="text-center">프로그래밍 언어론</td>
+													<td class="text-center">이우석</td>
+													<td class="text-center">대면</td>
+													<td class="text-center">금 9:00 - 10:30, 금 10:30 - 12:00, 금 13:00 - 15:00</td>
+													<td class="text-center">학연산클러스터 지원센터 510호 IC-PBL AI Room1</td>
+													<td class="text-center">
+														<button class="badge btn-primary btn-sm">청강신청</button>
+													</td>
+												</tr>
+												<tr>
+													<td class="text-center">4</td>
+													<td class="text-center">전공</td>
+													<td class="text-center">프로그래밍 언어론</td>
+													<td class="text-center">이우석</td>
+													<td class="text-center">대면</td>
+													<td class="text-center">금 9:00 - 10:30, 금 10:30 - 12:00, 금 13:00 - 15:00</td>
+													<td class="text-center">학연산클러스터 지원센터 510호 IC-PBL AI Room1</td>
+													<td class="text-center">
+														<button class="badge btn-primary btn-sm">청강신청</button>
+													</td>
+												</tr>
+												<tr>
+													<td class="text-center">4</td>
+													<td class="text-center">전공</td>
+													<td class="text-center">프로그래밍 언어론</td>
+													<td class="text-center">이우석</td>
+													<td class="text-center">대면</td>
+													<td class="text-center">금 9:00 - 10:30, 금 10:30 - 12:00, 금 13:00 - 15:00</td>
+													<td class="text-center">학연산클러스터 지원센터 510호 IC-PBL AI Room1</td>
+													<td class="text-center">
+														<button class="badge btn-primary btn-sm">청강신청</button>
+													</td>
+												</tr>
+												<tr>
+													<td class="text-center">4</td>
+													<td class="text-center">전공</td>
+													<td class="text-center">프로그래밍 언어론</td>
+													<td class="text-center">이우석</td>
+													<td class="text-center">대면</td>
+													<td class="text-center">금 9:00 - 10:30, 금 10:30 - 12:00, 금 13:00 - 15:00</td>
+													<td class="text-center">학연산클러스터 지원센터 510호 IC-PBL AI Room1</td>
+													<td class="text-center">
+														<button class="badge btn-primary btn-sm">청강신청</button>
+													</td>
+												</tr>
+												<tr>
+													<td class="text-center">4</td>
+													<td class="text-center">전공</td>
+													<td class="text-center">프로그래밍 언어론</td>
+													<td class="text-center">이우석</td>
+													<td class="text-center">대면</td>
+													<td class="text-center">금 9:00 - 10:30, 금 10:30 - 12:00, 금 13:00 - 15:00</td>
+													<td class="text-center">학연산클러스터 지원센터 510호 IC-PBL AI Room1</td>
+													<td class="text-center">
+														<button class="badge btn-primary btn-sm">청강신청</button>
+													</td>
+												</tr>
+												<tr>
+													<td class="text-center">4</td>
+													<td class="text-center">전공</td>
+													<td class="text-center">프로그래밍 언어론</td>
+													<td class="text-center">이우석</td>
+													<td class="text-center">대면</td>
+													<td class="text-center">금 9:00 - 10:30, 금 10:30 - 12:00, 금 13:00 - 15:00</td>
+													<td class="text-center">학연산클러스터 지원센터 510호 IC-PBL AI Room1</td>
+													<td class="text-center">
+														<button class="badge btn-primary btn-sm">청강신청</button>
+													</td>
+												</tr>
+											
 											</tbody>
 										</table>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-md-12 col-xxl-6 d-flex order-3 order-xxl-2">
-							<div class="card flex-fill w-100">
-								<div class="card-header">
-
-									<h5 class="card-title mb-0">Real-Time</h5>
-								</div>
-								<div class="card-body px-4">
-									<div id="world_map" style="height:350px;"></div>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-md-6 col-xxl-3 d-flex order-1 order-xxl-1">
-							<div class="card flex-fill">
-								<div class="card-header">
-
-									<h5 class="card-title mb-0">Calendar</h5>
-								</div>
-								<div class="card-body d-flex">
-									<div class="align-self-center w-100">
-										<div class="chart">
-											<div id="datetimepicker-dashboard"></div>
+										<div class="d-grid">
+											<a class="btn btn-primary">더 불러오기</a>
 										</div>
 									</div>
+
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="row">
-						<div class="col-12 col-lg-8 col-xxl-9 d-flex">
-							<div class="card flex-fill">
+						<!--
+							<div class="card">
 								<div class="card-header">
-
-									<h5 class="card-title mb-0">Latest Projects</h5>
+									<h5 class="card-title mb-0">필터</h5>
 								</div>
-								<table class="table table-hover my-0">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th class="d-none d-xl-table-cell">Start Date</th>
-											<th class="d-none d-xl-table-cell">End Date</th>
-											<th>Status</th>
-											<th class="d-none d-md-table-cell">Assignee</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Project Apollo</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td class="d-none d-xl-table-cell">31/06/2021</td>
-											<td><span class="badge bg-success">Done</span></td>
-											<td class="d-none d-md-table-cell">Vanessa Tucker</td>
-										</tr>
-										<tr>
-											<td>Project Fireball</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td class="d-none d-xl-table-cell">31/06/2021</td>
-											<td><span class="badge bg-danger">Cancelled</span></td>
-											<td class="d-none d-md-table-cell">William Harris</td>
-										</tr>
-										<tr>
-											<td>Project Hades</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td class="d-none d-xl-table-cell">31/06/2021</td>
-											<td><span class="badge bg-success">Done</span></td>
-											<td class="d-none d-md-table-cell">Sharon Lessman</td>
-										</tr>
-										<tr>
-											<td>Project Nitro</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td class="d-none d-xl-table-cell">31/06/2021</td>
-											<td><span class="badge bg-warning">In progress</span></td>
-											<td class="d-none d-md-table-cell">Vanessa Tucker</td>
-										</tr>
-										<tr>
-											<td>Project Phoenix</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td class="d-none d-xl-table-cell">31/06/2021</td>
-											<td><span class="badge bg-success">Done</span></td>
-											<td class="d-none d-md-table-cell">William Harris</td>
-										</tr>
-										<tr>
-											<td>Project X</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td class="d-none d-xl-table-cell">31/06/2021</td>
-											<td><span class="badge bg-success">Done</span></td>
-											<td class="d-none d-md-table-cell">Sharon Lessman</td>
-										</tr>
-										<tr>
-											<td>Project Romeo</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td class="d-none d-xl-table-cell">31/06/2021</td>
-											<td><span class="badge bg-success">Done</span></td>
-											<td class="d-none d-md-table-cell">Christina Mason</td>
-										</tr>
-										<tr>
-											<td>Project Wombat</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td class="d-none d-xl-table-cell">31/06/2021</td>
-											<td><span class="badge bg-warning">In progress</span></td>
-											<td class="d-none d-md-table-cell">William Harris</td>
-										</tr>
-									</tbody>
-								</table>
+								<div class="card-body">
+									
+									<input type="text" class="form-control" placeholder="Input">
+									
+									<select class="form-select mb-3">
+          <option selected>Open this select menu</option>
+          <option>One</option>
+          <option>Two</option>
+          <option>Three</option>
+								</div>
 							</div>
-						</div>
-						<div class="col-12 col-lg-4 col-xxl-3 d-flex">
-							<div class="card flex-fill w-100">
-								<div class="card-header">
 
-									<h5 class="card-title mb-0">Monthly Sales</h5>
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Textarea</h5>
 								</div>
-								<div class="card-body d-flex w-100">
-									<div class="align-self-center chart chart-lg">
-										<canvas id="chartjs-dashboard-bar"></canvas>
+								<div class="card-body">
+									<textarea class="form-control" rows="2" placeholder="Textarea"></textarea>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Checkboxes</h5>
+								</div>
+								<div class="card-body">
+									<div>
+										<label class="form-check">
+            <input class="form-check-input" type="checkbox" value="">
+            <span class="form-check-label">
+              Option one is this and that&mdash;be sure to include why it's great
+            </span>
+          </label>
+										<label class="form-check">
+            <input class="form-check-input" type="checkbox" value="" disabled>
+            <span class="form-check-label">
+              Option two is disabled
+            </span>
+          </label>
 									</div>
+									<div>
+										<label class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="option1">
+            <span class="form-check-label">
+              1
+            </span>
+          </label>
+										<label class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="option2">
+            <span class="form-check-label">
+              2
+            </span>
+          </label>
+										<label class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="option3" disabled>
+            <span class="form-check-label">
+              3
+            </span>
+          </label>
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Read only</h5>
+								</div>
+								<div class="card-body">
+									<input class="form-control" type="text" placeholder="Readonly input" readonly>
+								</div>
+							</div>
+						</div>
+						
+
+						<div class="col-md-8 col-xl-9">
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Radios</h5>
+								</div>
+								<div class="card-body">
+									<div>
+										<label class="form-check">
+            <input class="form-check-input" type="radio" value="option1" name="radios-example" checked>
+            <span class="form-check-label">
+              Option one is this and that&mdash;be sure to include why it's great
+            </span>
+          </label>
+										<label class="form-check">
+            <input class="form-check-input" type="radio" value="option2" name="radios-example">
+            <span class="form-check-label">
+              Option two can be something else and selecting it will deselect option one
+            </span>
+          </label>
+										<label class="form-check">
+            <input class="form-check-input" type="radio" value="option3" name="radios-example" disabled>
+            <span class="form-check-label">
+              Option three is disabled
+            </span>
+          </label>
+									</div>
+									<div>
+										<label class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inline-radios-example" value="option1">
+            <span class="form-check-label">
+              1
+            </span>
+          </label>
+										<label class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inline-radios-example" value="option2">
+            <span class="form-check-label">
+              2
+            </span>
+          </label>
+										<label class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inline-radios-example" value="option3" disabled>
+            <span class="form-check-label">
+              3
+            </span>
+          </label>
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Selects</h5>
+								</div>
+								<div class="card-body">
+									<select class="form-select mb-3">
+          <option selected>Open this select menu</option>
+          <option>One</option>
+          <option>Two</option>
+          <option>Three</option>
+        </select>
+
+									<select multiple class="form-control">
+          <option>One</option>
+          <option>Two</option>
+          <option>Three</option>
+          <option>Four</option>
+        </select>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Disabled</h5>
+								</div>
+								<div class="card-body">
+									<div class="mb-3">
+										<label class="form-label">Disabled input</label>
+										<input type="text" class="form-control" placeholder="Disabled input" disabled>
+									</div>
+									<div class="mb-3">
+										<label class="form-label">Disabled select menu</label>
+										<select class="form-control" disabled>
+            <option>Disabled select</option>
+          </select>
+									</div>
+									<label class="form-check">
+          <input class="form-check-input" type="checkbox" value="" disabled>
+          <span class="form-check-label">
+            Can't check this
+          </span>
+        </label>
 								</div>
 							</div>
 						</div>
 					</div>
 
 				</div>
-				!-->
+
 			</main>
 
 			<footer class="footer">
