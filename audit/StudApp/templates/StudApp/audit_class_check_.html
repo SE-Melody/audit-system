@@ -48,13 +48,13 @@
 						청강 희망
 					</li>
 
-					<li class="sidebar-item active">
+					<li class="sidebar-item">
 						<a class="sidebar-link" href="index.html">
               <i class="align-middle" data-feather="square"></i> <span class="align-middle">청강 희망 신청</span>
             </a>
 					</li>
 
-					<li class="sidebar-item">
+					<li class="sidebar-item active">
 						<a class="sidebar-link" href="pages-profile.html">
               <i class="align-middle" data-feather="check-square"></i> <span class="align-middle">청강 희망 확인</span>
             </a>
@@ -322,6 +322,294 @@
 			</nav>
 
 			<main class="content">
+				<div class="container-fluid p-0">
+
+					<div class="mb-3">
+						<h1 class="h3 d-inline align-middle">청강 신청 확인</h1>
+						
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-xl-3">
+
+							<!-- 필터 div 파트 !-->
+
+							<div class="card mb-3">
+								<div class="card-header">
+									<h5 class="card-title mb-0">필터</h5>
+								</div>
+
+								<div class="card-body" style= "padding-bottom: 5px;">
+
+								<label class="form-label" style = "margin-bottom: 15px;">대학/학과</label>
+									
+									<select class="form-select mb-3">
+          <option selected>단과대학 선택</option>
+          <option>One</option>
+          <option>Two</option>
+          <option>Three</option>
+		  							</select>
+
+									<select class="form-select mb-3">
+          <option selected>학과/학부/전공 선택</option>
+          <option>One</option>
+          <option>Two</option>
+          <option>Three</option>
+									</select>
+
+									<hr class="my-0" />
+								</div>
+
+								
+								<div class="card-body" style= "padding-bottom: 5px;">
+									<label class="form-label" style = "margin-bottom: 15px;">학년</label>
+									
+									<div>
+										<label class="form-check" style="padding-bottom: 10px;">
+            <input class="form-check-input" type="checkbox" value="">
+            <span class="form-check-label">
+              1학년
+            </span>
+          </label>
+
+		  								<label class="form-check" style="padding-bottom: 10px;">
+            <input class="form-check-input" type="checkbox" value="">
+            <span class="form-check-label">
+              2학년
+            </span>
+          </label>
+		  
+		  								<label class="form-check" style="padding-bottom: 10px;">
+            <input class="form-check-input" type="checkbox" value="">
+            <span class="form-check-label">
+              3학년
+            </span>
+          </label>
+
+		  								<label class="form-check" style="padding-bottom: 10px;">
+            <input class="form-check-input" type="checkbox" value="">
+            <span class="form-check-label">
+              4학년
+            </span>
+          </label>
+
+		  								<label class="form-check" style="padding-bottom: 10px;">
+            <input class="form-check-input" type="checkbox" value="">
+            <span class="form-check-label">
+              5학년
+            </span>
+          </label>
+
+		  								<label class="form-check" style="padding-bottom: 10px;">
+            <input class="form-check-input" type="checkbox" value="">
+            <span class="form-check-label">
+              전체 학년
+            </span>
+          </label>							
+									</div>
+									<hr class="my-0" />
+								</div>
+								
+								<div class="card-body" style= "padding-bottom: 5px;">
+									<label class="form-label" style = "margin-bottom: 15px;">이수구분</label>
+									<div>
+										<label class="form-check" style="padding-bottom: 10px;">
+            <input class="form-check-input" type="checkbox" value="">
+            <span class="form-check-label">
+              전공
+            </span>
+          </label>
+
+		  								<label class="form-check" style="padding-bottom: 10px;">
+            <input class="form-check-input" type="checkbox" value="">
+            <span class="form-check-label">
+              교양
+            </span>
+          </label>							
+									</div>
+									<hr class="my-0" />
+								</div>
+
+								
+								<div class="card-body">
+									<label class="form-label" style = "margin-bottom: 15px;">검색</label>
+										
+										<input type="text" class="form-control" placeholder="교과목명">
+
+										<a class="btn btn-primary" style="float: right; margin-top: 15px;">조회</a>
+
+								</div>
+							</div>
+
+							<!-- 정렬 div 파트 !-->
+
+							<div class="card mb-3">
+								<div class="card-header">
+									<h5 class="card-title mb-0">정렬</h5>
+								</div>
+
+								<div class="card-body">
+
+								<label class="form-label" style = "margin-bottom: 15px;">교과목명</label>
+
+								<div>
+										<label class="form-check" style="padding-bottom: 10px;">
+            <input class="form-check-input" type="radio" value="option1" name="radios-example" checked>
+            <span class="form-check-label">
+              오름차순
+            </span>
+          </label>
+
+		  								<label class="form-check" style="padding-bottom: 10px;">
+            <input class="form-check-input" type="radio" value="option1" name="radios-example" checked>
+            <span class="form-check-label">
+              내림차순
+            </span>
+          </label>
+										
+									</div>
+									
+									<hr class="my-0" />
+									<a class="btn btn-primary" style="float: right; margin-top: 15px;">조회</a>
+							</div>
+
+						</div>
+
+					</div>
+
+					<!-- 강의 리스트 div 입니다 !-->
+					
+					<div class="col-md-8 col-xl-9">
+							<div class="card">
+								<div class="card-header">
+
+									<h5 class="card-title mb-0">강의</h5>
+								</div>
+								<div class="card-body h-100">
+
+								<div class="table-responsive table-upgrade">
+										<table class="table">
+											<thead>
+												<tr>
+													<th class="text-center">진행현황</th>
+													<th class="text-center">학년</th>
+													<th class="text-center">이수구분</th>
+													<th class="text-center">교과목명</th>
+													<th class="text-center">교강사</th>
+													<th class="text-center">수업형태</th>
+													<th class="text-center">수업일시</th>
+													<th class="text-center">강의실</th>
+													<th class="text-center">주차</th>
+													<th class="text-center">신청/제한인원</th>
+													<th class="text-center">신청취소</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="text-center">
+														<button class="badge btn-warning btn-sm">신청진행</button>
+													</td>
+													<td class="text-center">4</td>
+													<td class="text-center">전공</td>
+													<td class="text-center">데이터베이스응용</td>
+													<td class="text-center">이동호</td>
+													<td class="text-center">대면</td>
+													<td class="text-center">월 13:00-14:30, 화 13:00-14:30, 목 11:00-13:00</td>
+													<td class="text-center">학연산클러스터지원센터 510호 IC-PBL AI Room1, 학연산클러스터지원센터 512호 AI실습실</td>
+													<td class="text-center">7주차</td>
+													<td class="text-center">00/00명</td>
+													<td class="text-center">
+														<button class="badge btn-primary btn-sm">신청취소</button>
+													</td>
+												</tr>
+												
+												<tr>
+													<td class="text-center">
+														<button class="badge btn-success btn-sm">신청성공</button>
+													</td>
+													<td class="text-center">4</td>
+													<td class="text-center">전공</td>
+													<td class="text-center">소프트웨어공학</td>
+													<td class="text-center">Scott Uk-Jin Lee</td>
+													<td class="text-center">대면</td>
+													<td class="text-center">금 09:00-10:30, 금 10:30-12:00, 금 13:00-15:00</td>
+													<td class="text-center">학연산클러스터지원센터 510호 IC-PBL AI Room1, 학연산클러스터지원센터 509호 IC-PBL Playing Purple</td>
+													<td class="text-center">6주차</td>
+													<td class="text-center">00/00명</td>
+												</tr>
+
+												<tr>
+													<td class="text-center">
+														<button class="badge btn-danger btn-sm">신청실패</button>
+													</td>
+													<td class="text-center">4</td>
+													<td class="text-center">전공</td>
+													<td class="text-center">프로그래밍언어론</td>
+													<td class="text-center">이우석</td>
+													<td class="text-center">대면</td>
+													<td class="text-center">금 9:00 - 10:30, 금 10:30 - 12:00, 금 13:00 - 15:00</td>
+													<td class="text-center">학연산클러스터지원센터 510호 IC-PBL AI Room1</td>
+													<td class="text-center">3주차</td>
+													<td class="text-center">00/00명</td>
+												</tr>
+
+												<tr>
+													<td class="text-center">
+														<button class="badge btn-secondary btn-sm">청강완료</button>
+													</td>
+													<td class="text-center">4</td>
+													<td class="text-center">전공</td>
+													<td class="text-center">딥러닝</td>
+													<td class="text-center">정우환</td>
+													<td class="text-center">원격</td>
+													<td class="text-center">월 09:00-10:30, 화 09:00-10:30</td>
+													<td class="text-center">제1공학관 404 강의실</td>
+													<td class="text-center">3주차</td>
+													<td class="text-center">00/00명</td>
+												</tr>
+
+												<tr>
+													<td class="text-center">
+														<button class="badge btn-secondary btn-sm">청강완료</button>
+													</td>
+													<td class="text-center">4</td>
+													<td class="text-center">전공</td>
+													<td class="text-center">딥러닝</td>
+													<td class="text-center">정우환</td>
+													<td class="text-center">원격</td>
+													<td class="text-center">월 09:00-10:30, 화 09:00-10:30</td>
+													<td class="text-center">제1공학관 404 강의실</td>
+													<td class="text-center">2주차</td>
+													<td class="text-center">00/00명</td>
+												</tr>
+
+												<tr>
+													<td class="text-center">
+														<button class="badge btn-secondary btn-sm">청강완료</button>
+													</td>
+													<td class="text-center">4</td>
+													<td class="text-center">전공</td>
+													<td class="text-center">딥러닝</td>
+													<td class="text-center">정우환</td>
+													<td class="text-center">원격</td>
+													<td class="text-center">월 09:00-10:30, 화 09:00-10:30</td>
+													<td class="text-center">제1공학관 404 강의실</td>
+													<td class="text-center">1주차</td>
+													<td class="text-center">00/00명</td>
+												</tr>
+
+
+
+
+											</tbody>
+										</table>
+										<div class="d-grid">
+											<a class="btn btn-primary">더 불러오기</a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
 				<!--
 				<div class="container-fluid p-0">c
 
