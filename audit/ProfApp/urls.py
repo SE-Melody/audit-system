@@ -2,6 +2,8 @@ from django.urls import path
 
 from . import views
 
+app_name = 'prof'
+
 urlpatterns = [
     path('', views.index, name='index'),
     path('before/', views.before, name='before'),
