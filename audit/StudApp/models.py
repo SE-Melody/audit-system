@@ -13,7 +13,7 @@ class Students(models.Model):
 
 class Apply(models.Model):
     id = models.IntegerField(primary_key=True)
-    unit = models.ForeignKey(Unit, on_delete=models.DO_NOTHING, blank=False, null=False)
+    unit = models.ForeignKey("ProfApp.Unit", on_delete=models.DO_NOTHING, blank=False, null=False)
     student = models.ForeignKey(Students, on_delete=models.DO_NOTHING, blank=False, null=False)
     admim_mileage = models.IntegerField
     apply_time = models.DateTimeField
@@ -26,7 +26,7 @@ class Apply(models.Model):
 
 class Post(models.Model):
     id = models.IntegerField
-    subject = models.ForeignKey(Subject, on_delete=models.DO_NOTHING, blank=False, null=False)
+    subject = models.ForeignKey("ProfApp.Subject", on_delete=models.DO_NOTHING, blank=False, null=False)
     category = models.BooleanField
     content = models.TextField
     time = models.DateTimeField
