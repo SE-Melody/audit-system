@@ -14,7 +14,7 @@ class Apply(models.Model):
     id = models.IntegerField(primary_key=True)
     unit = models.ForeignKey("ProfApp.Unit", on_delete=models.DO_NOTHING, blank=False, null=False)
     student = models.ForeignKey(Stud, on_delete=models.DO_NOTHING, blank=False, null=False)
-    admim_mileage = models.IntegerField()
+    admin_mileage = models.IntegerField()
     apply_time = models.DateTimeField()
     remain_semaster = models.IntegerField()
     result = models.BooleanField(blank=True)
