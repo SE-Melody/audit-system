@@ -23,6 +23,8 @@
 
 	<link href="{% static 'ProfApp/css/app.css' %}" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -31,146 +33,106 @@
 		<div class="main">
 			{% include "ProfApp/navbar.html" %}
 			<main class="content">
-				<!--
-				<div class="container-fluid p-0">c
+				<div class="container-fluid p-0">
 
-					<h1 class="h3 mb-3"><strong>Analytics</strong> Dashboard</h1>
-
-					<div class="row">
-						<div class="col-xl-6 col-xxl-5 d-flex">
-							<div class="w-100">
-								<div class="row">
-									<div class="col-sm-6">
-										<div class="card">
-											<div class="card-body">
-												<div class="row">
-													<div class="col mt-0">
-														<h5 class="card-title">Sales</h5>
-													</div>
-
-													<div class="col-auto">
-														<div class="stat text-primary">
-															<i class="align-middle" data-feather="truck"></i>
-														</div>
-													</div>
-												</div>
-												<h1 class="mt-1 mb-3">2.382</h1>
-												<div class="mb-0">
-													<span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> -3.65% </span>
-													<span class="text-muted">Since last week</span>
-												</div>
-											</div>
-										</div>
-										<div class="card">
-											<div class="card-body">
-												<div class="row">
-													<div class="col mt-0">
-														<h5 class="card-title">Visitors</h5>
-													</div>
-
-													<div class="col-auto">
-														<div class="stat text-primary">
-															<i class="align-middle" data-feather="users"></i>
-														</div>
-													</div>
-												</div>
-												<h1 class="mt-1 mb-3">14.212</h1>
-												<div class="mb-0">
-													<span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i> 5.25% </span>
-													<span class="text-muted">Since last week</span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-6">
-										<div class="card">
-											<div class="card-body">
-												<div class="row">
-													<div class="col mt-0">
-														<h5 class="card-title">Earnings</h5>
-													</div>
-
-													<div class="col-auto">
-														<div class="stat text-primary">
-															<i class="align-middle" data-feather="dollar-sign"></i>
-														</div>
-													</div>
-												</div>
-												<h1 class="mt-1 mb-3">$21.300</h1>
-												<div class="mb-0">
-													<span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i> 6.65% </span>
-													<span class="text-muted">Since last week</span>
-												</div>
-											</div>
-										</div>
-										<div class="card">
-											<div class="card-body">
-												<div class="row">
-													<div class="col mt-0">
-														<h5 class="card-title">Orders</h5>
-													</div>
-
-													<div class="col-auto">
-														<div class="stat text-primary">
-															<i class="align-middle" data-feather="shopping-cart"></i>
-														</div>
-													</div>
-												</div>
-												<h1 class="mt-1 mb-3">64</h1>
-												<div class="mb-0">
-													<span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> -2.25% </span>
-													<span class="text-muted">Since last week</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-xl-6 col-xxl-7">
-							<div class="card flex-fill w-100">
-								<div class="card-header">
-
-									<h5 class="card-title mb-0">Recent Movement</h5>
-								</div>
-								<div class="card-body py-3">
-									<div class="chart chart-sm">
-										<canvas id="chartjs-dashboard-line"></canvas>
-									</div>
-								</div>
-							</div>
-						</div>
+					<div class="mb-3">
+						<h1 class="h3 d-inline align-middle">청강 관리</h1>
+						
 					</div>
-
-					<div class="row">
-						<div class="col-12 col-md-6 col-xxl-3 d-flex order-2 order-xxl-3">
-							<div class="card flex-fill w-100">
+					
+					<!-- 강의 리스트 div 입니다 !-->
+					
+					<div class="col-md-12 col-xl-12">
+							<div class="card">
 								<div class="card-header">
 
-									<h5 class="card-title mb-0">Browser Usage</h5>
+									<h5 class="card-title mb-0">강의</h5>
 								</div>
-								<div class="card-body d-flex">
-									<div class="align-self-center w-100">
-										<div class="py-3">
-											<div class="chart chart-xs">
-												<canvas id="chartjs-dashboard-pie"></canvas>
-											</div>
-										</div>
+								<div class="card-body h-100">
 
-										<table class="table mb-0">
-											<tbody>
+								<div class="table-responsive table-upgrade">
+										<table class="table">
+											<thead>
 												<tr>
-													<td>Chrome</td>
-													<td class="text-end">4306</td>
+													<th class="text-center">진행여부</th>
+													<th class="text-center">학년</th>
+													<th class="text-center">이수구분</th>
+													<th class="text-center">교과목명</th>
+													<th class="text-center">수업형태</th>
+													<th class="text-center">수업일시</th>
+													<th class="text-center">유닛</th>
+													<th class="text-center">다음주 신청인원</th>
+													<th class="text-center">주차선택</th>
+													<th class="text-center">학생관리</th>
+												</tr>
+											</thead>
+											<tbody>																								
+												<tr>
+													<td class="text-center">
+														<button class="badge btn-success btn-sm">청강진행</button>
+													</td>
+													<td class="text-center">4</td>
+													<td class="text-center">전공</td>
+													<td class="text-center">소프트웨어공학</td>
+													<td class="text-center">대면</td>
+													<td class="text-center">금 09:00-10:30, 금 10:30-12:00, 금 13:00-15:00</td>
+													<td class="text-center">3-4, 5-7</td>
+													<td class="text-center">5명</td>
+													<td class="text-center">
+														<select class="form-select">
+															<option selected>주차선택</option>
+															<option>1주차</option>
+															<option>2주차</option>
+															<option>3주차</option>
+															<option>4주차</option>
+															<option>5주차</option>
+															<option>6주차</option>
+															<option>7주차</option>
+															<option>8주차</option>
+															<option>9주차</option>
+															<option>10주차</option>
+															<option>11주차</option>
+															<option>12주차</option>
+															<option>13주차</option>
+															<option>14주차</option>
+															<option>15주차</option>
+															<option>16주차</option>
+														</select>
+													</td>
+													<td class="text-center">
+														<button data-bs-toggle="collapse" href="#test" aria-expanded="false" aria-controls="test" class="badge btn-primary btn-sm">학생관리</button>
+													</td>
 												</tr>
 												<tr>
-													<td>Firefox</td>
-													<td class="text-end">3801</td>
+													<td class="text-center">
+														<button class="badge btn-secondary btn-sm">청강미진행</button>
+													</td>
+													<td class="text-center">4</td>
+													<td class="text-center">전공</td>
+													<td class="text-center">데이터베이스응용</td>
+													<td class="text-center">대면</td>
+													<td class="text-center">월 13:00-14:30, 화 13:00-14:30, 목 11:00-13:00</td>
+													<td class="text-center"></td>
+													<td class="text-center"></td>
+													<td class="text-center"></td>
+													<td class="text-center"></td>
+
 												</tr>
+
+
 												<tr>
-													<td>IE</td>
-													<td class="text-end">1689</td>
+													<td class="text-center">
+														<button class="badge btn-secondary btn-sm">청강미진행</button>
+													</td>
+													<td class="text-center">4</td>
+													<td class="text-center">전공</td>
+													<td class="text-center">딥러닝</td>
+													<td class="text-center">대면</td>
+													<td class="text-center">월 09:00-10:30, 화 09:00-10:30</td>
+													<td class="text-center"></td>
+													<td class="text-center"></td>
+													<td class="text-center"></td>
+													<td class="text-center"></td>
 												</tr>
 											</tbody>
 										</table>
@@ -178,129 +140,150 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-12 col-md-12 col-xxl-6 d-flex order-3 order-xxl-2">
-							<div class="card flex-fill w-100">
+
+						<!-- 청강학생정보리스트입니다 -->
+						<div id="test" class="collapse col-md-12 col-xl-12">
+							<div class="card">
 								<div class="card-header">
 
-									<h5 class="card-title mb-0">Real-Time</h5>
+									<h5 class="card-title mb-0">청강 학생 정보</h5>
 								</div>
-								<div class="card-body px-4">
-									<div id="world_map" style="height:350px;"></div>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-md-6 col-xxl-3 d-flex order-1 order-xxl-1">
-							<div class="card flex-fill">
-								<div class="card-header">
+								<div class="card-body h-100">
 
-									<h5 class="card-title mb-0">Calendar</h5>
-								</div>
-								<div class="card-body d-flex">
-									<div class="align-self-center w-100">
-										<div class="chart">
-											<div id="datetimepicker-dashboard"></div>
-										</div>
+								<div class="table-responsive table-upgrade">
+										<table class="table">
+											<thead>
+												<tr>
+													<th class="text-center">학년</th>
+													<th class="text-center">학과</th>
+													<th class="text-center">이름</th>
+													<th class="text-center">학번</th>
+													<th class="text-center">주차</th>
+													<th class="text-center">경고/의견보내기</th>
+												</tr>
+											</thead>
+											<tbody>																								
+												<tr>
+													<td class="text-center">1</td>
+													<td class="text-center">00000</td>
+													<td class="text-center">홍길동</td>
+													<td class="text-center">000000</td>
+													<td class="text-center">06</td>
+													<td class="text-center">
+														<button data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" class="badge btn-primary btn-sm">의견작성</button>
+													</td>
+												</tr>
+												<tr>
+													<td colspan="6" class="p-0">
+														<div class="collapse" id="collapseExample">
+															<div class="card">
+																<h5 class="card-title mt-3 mb-3">의견작성</h5>
+																<textarea class="form-control" placeholder="여기에 의견을 작성하세요" rows="5"></textarea>																
+															</div>
+															<div style="float:right">
+																<button class="btn btn-primary mt-0 mb-3 mr-10">경고/의견보내기</button>
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="text-center">4</td>
+													<td class="text-center">00000</td>
+													<td class="text-center">홍길동</td>
+													<td class="text-center">000000</td>
+													<td class="text-center">06</td>
+													<td class="text-center">
+														<button data-bs-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2" class="badge btn-primary btn-sm">의견작성</button>
+													</td>
+												</tr>
+												<tr>
+													<td colspan="6" class="p-0">
+														<div class="collapse" id="collapseExample2">
+															<div class="card">
+																<h5 class="card-title mt-3 mb-3">의견작성</h5>
+																<textarea class="form-control" placeholder="여기에 의견을 작성하세요" rows="5"></textarea>																
+															</div>
+															<div style="float:right">
+																<button class="btn btn-primary mt-0 mb-3 mr-10">경고/의견보내기</button>
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="text-center">3</td>
+													<td class="text-center">00000</td>
+													<td class="text-center">홍길동</td>
+													<td class="text-center">000000</td>
+													<td class="text-center">06</td>
+													<td class="text-center">
+														<button data-bs-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3" class="badge btn-primary btn-sm">의견작성</button>
+													</td>
+												</tr>
+												<tr>
+													<td colspan="6" class="p-0">
+														<div class="collapse" id="collapseExample3">
+															<div class="card">
+																<h5 class="card-title mt-3 mb-3">의견작성</h5>
+																<textarea class="form-control" placeholder="여기에 의견을 작성하세요" rows="5"></textarea>																
+															</div>
+															<div style="float:right">
+																<button class="btn btn-primary mt-0 mb-3 mr-10">경고/의견보내기</button>
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="text-center">3</td>
+													<td class="text-center">00000</td>
+													<td class="text-center">홍길동</td>
+													<td class="text-center">000000</td>
+													<td class="text-center">06</td>
+													<td class="text-center">
+														<button data-bs-toggle="collapse" href="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4" class="badge btn-primary btn-sm">의견작성</button>
+													</td>
+												</tr>
+												<tr>
+													<td colspan="6" class="p-0">
+														<div class="collapse" id="collapseExample4">
+															<div class="card">
+																<h5 class="card-title mt-3 mb-3">의견작성</h5>
+																<textarea class="form-control" placeholder="여기에 의견을 작성하세요" rows="5"></textarea>																
+															</div>
+															<div style="float:right">
+																<button class="btn btn-primary mt-0 mb-3 mr-10">경고/의견보내기</button>
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="text-center">3</td>
+													<td class="text-center">00000</td>
+													<td class="text-center">홍길동</td>
+													<td class="text-center">000000</td>
+													<td class="text-center">06</td>
+													<td class="text-center">
+														<button data-bs-toggle="collapse" href="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5" class="badge btn-primary btn-sm">의견작성</button>
+													</td>
+												</tr>
+												<tr>
+													<td colspan="6" class="p-0">
+														<div class="collapse" id="collapseExample5">
+															<div class="card">
+																<h5 class="card-title mt-3 mb-3">의견작성</h5>
+																<textarea class="form-control" placeholder="여기에 의견을 작성하세요" rows="5"></textarea>																
+															</div>
+															<div style="float:right">
+																<button class="btn btn-primary mt-0 mb-3 mr-10">경고/의견보내기</button>
+															</div>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-12 col-lg-8 col-xxl-9 d-flex">
-							<div class="card flex-fill">
-								<div class="card-header">
-
-									<h5 class="card-title mb-0">Latest Projects</h5>
-								</div>
-								<table class="table table-hover my-0">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th class="d-none d-xl-table-cell">Start Date</th>
-											<th class="d-none d-xl-table-cell">End Date</th>
-											<th>Status</th>
-											<th class="d-none d-md-table-cell">Assignee</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Project Apollo</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td class="d-none d-xl-table-cell">31/06/2021</td>
-											<td><span class="badge bg-success">Done</span></td>
-											<td class="d-none d-md-table-cell">Vanessa Tucker</td>
-										</tr>
-										<tr>
-											<td>Project Fireball</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td class="d-none d-xl-table-cell">31/06/2021</td>
-											<td><span class="badge bg-danger">Cancelled</span></td>
-											<td class="d-none d-md-table-cell">William Harris</td>
-										</tr>
-										<tr>
-											<td>Project Hades</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td class="d-none d-xl-table-cell">31/06/2021</td>
-											<td><span class="badge bg-success">Done</span></td>
-											<td class="d-none d-md-table-cell">Sharon Lessman</td>
-										</tr>
-										<tr>
-											<td>Project Nitro</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td class="d-none d-xl-table-cell">31/06/2021</td>
-											<td><span class="badge bg-warning">In progress</span></td>
-											<td class="d-none d-md-table-cell">Vanessa Tucker</td>
-										</tr>
-										<tr>
-											<td>Project Phoenix</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td class="d-none d-xl-table-cell">31/06/2021</td>
-											<td><span class="badge bg-success">Done</span></td>
-											<td class="d-none d-md-table-cell">William Harris</td>
-										</tr>
-										<tr>
-											<td>Project X</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td class="d-none d-xl-table-cell">31/06/2021</td>
-											<td><span class="badge bg-success">Done</span></td>
-											<td class="d-none d-md-table-cell">Sharon Lessman</td>
-										</tr>
-										<tr>
-											<td>Project Romeo</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td class="d-none d-xl-table-cell">31/06/2021</td>
-											<td><span class="badge bg-success">Done</span></td>
-											<td class="d-none d-md-table-cell">Christina Mason</td>
-										</tr>
-										<tr>
-											<td>Project Wombat</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td class="d-none d-xl-table-cell">31/06/2021</td>
-											<td><span class="badge bg-warning">In progress</span></td>
-											<td class="d-none d-md-table-cell">William Harris</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-						<div class="col-12 col-lg-4 col-xxl-3 d-flex">
-							<div class="card flex-fill w-100">
-								<div class="card-header">
-
-									<h5 class="card-title mb-0">Monthly Sales</h5>
-								</div>
-								<div class="card-body d-flex w-100">
-									<div class="align-self-center chart chart-lg">
-										<canvas id="chartjs-dashboard-bar"></canvas>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-				!-->
 			</main>
 
 			<footer class="footer">
