@@ -1,69 +1,67 @@
 {% load static %}
 <nav id="sidebar" class="sidebar js-sidebar">
-			<div class="sidebar-content js-simplebar">
-				<a class="sidebar-brand" href="{% url 'stud:index' %}">
-          <span class="align-middle"><img src="{% static 'StudApp/img/icons/hy_logo.png' %}" class="avatar img-fluid rounded-circle">  &nbsp; 한양대학교 ERICA </span>
-        </a>
+	<div class="sidebar-content js-simplebar">
+		<a class="sidebar-brand" href="{% url 'stud:index' %}">
+			<span class="align-middle"><img src="{% static 'StudApp/img/icons/hy_logo.png' %}" class="avatar img-fluid rounded-circle">  &nbsp; 한양대학교 ERICA </span>
+		</a>
 
-				<ul class="sidebar-nav">
-					<li class="sidebar-header">
-						공지 사항
-					</li>
-					
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="{% url 'stud:index' %}">
-              <i class="align-middle" data-feather="user"></i> <span class="align-middle">공지 사항</span>
-            </a>
-					</li>
-
-					<li class="sidebar-header">
-						청강 희망
-					</li>
-
-					<li class="sidebar-item active">
-						<a class="sidebar-link" href="{% url 'stud:index' %}">
-              <i class="align-middle" data-feather="square"></i> <span class="align-middle">청강 희망 신청</span>
-            </a>
-					</li>
-
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="{% url 'stud:index' %}">
-              <i class="align-middle" data-feather="check-square"></i> <span class="align-middle">청강 희망 확인</span>
-            </a>
-					</li>
+		<ul class="sidebar-nav">
+			<li class="sidebar-header">
+				공지 사항
+			</li>
 			
-            </a>
-					</li>
+			<li class="sidebar-item">
+				<a class="sidebar-link" href="{% url 'stud:index' %}">
+					<i class="align-middle" data-feather="user"></i> <span class="align-middle">공지 사항</span>
+				</a>
+			</li>
 
-					<li class="sidebar-header">
-						청강 신청
-					</li>
+			<li class="sidebar-header">
+				청강 희망
+			</li>
 
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="{% url 'stud:reg' %}">
-              <i class="align-middle" data-feather="square"></i> <span class="align-middle">청강 신청</span>
-            </a>
-					</li>
+			<li class="sidebar-item active">
+				<a class="sidebar-link" href="{% url 'stud:index' %}">
+					<i class="align-middle" data-feather="square"></i> <span class="align-middle">청강 희망 신청</span>
+				</a>
+			</li>
 
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="{% url 'stud:check' %}">
-              <i class="align-middle" data-feather="check-square"></i> <span class="align-middle">청강 신청 확인</span>
-            </a>
-					</li>
+			<li class="sidebar-item">
+				<a class="sidebar-link" href="{% url 'stud:index' %}">
+					<i class="align-middle" data-feather="check-square"></i> <span class="align-middle">청강 희망 확인</span>
+				</a>
+			</li>
+	
+			</li>
 
-            </a>
-					</li>
+			<li class="sidebar-header">
+				청강 신청
+			</li>
 
-					<li class="sidebar-header">
-						비교과/특강
-					</li>
+			<li class="sidebar-item">
+				<a class="sidebar-link" href="{% url 'stud:reg' %}">
+					<i class="align-middle" data-feather="square"></i> <span class="align-middle">청강 신청</span>
+				</a>
+			</li>
 
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="{% url 'stud:index' %}">
-              <i class="align-middle" data-feather="grid"></i> <span class="align-middle">비교과/특강 신청</span>
-            </a>
-					</li>
-					
-				</ul>
+			<li class="sidebar-item">
+				<a class="sidebar-link" href="{% url 'stud:check' %}">
+					<i class="align-middle" data-feather="check-square"></i> <span class="align-middle">청강 신청 확인</span>
+				</a>
+			</li>
+
+			</li>
+
+			<li class="sidebar-header">
+				비교과/특강
+			</li>
+
+			<li class="sidebar-item">
+				<a class="sidebar-link" href="{% url 'stud:index' %}">
+					<i class="align-middle" data-feather="grid"></i> <span class="align-middle">비교과/특강 신청</span>
+				</a>
+			</li>
 			
-		</nav>
+		</ul>
+	</div>
+</nav>

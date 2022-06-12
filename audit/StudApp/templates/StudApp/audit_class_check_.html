@@ -26,7 +26,72 @@
 
 <body>
 	<div class="wrapper">
-		{% include "StudApp/sidebar.html" %}
+		<nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="{% url 'stud:index' %}">
+					<span class="align-middle"><img src="{% static 'StudApp/img/icons/hy_logo.png' %}" class="avatar img-fluid rounded-circle">  &nbsp; 한양대학교 ERICA </span>
+				</a>
+
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+						공지 사항
+					</li>
+					
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="{% url 'stud:index' %}">
+							<i class="align-middle" data-feather="user"></i> <span class="align-middle">공지 사항</span>
+						</a>
+					</li>
+
+					<li class="sidebar-header">
+						청강 희망
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="{% url 'stud:index' %}">
+							<i class="align-middle" data-feather="square"></i> <span class="align-middle">청강 희망 신청</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="{% url 'stud:index' %}">
+							<i class="align-middle" data-feather="check-square"></i> <span class="align-middle">청강 희망 확인</span>
+						</a>
+					</li>
+			
+					</li>
+
+					<li class="sidebar-header">
+						청강 신청
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="{% url 'stud:reg' %}">
+							<i class="align-middle" data-feather="square"></i> <span class="align-middle">청강 신청</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item active">
+						<a class="sidebar-link" href="{% url 'stud:check' %}">
+							<i class="align-middle" data-feather="check-square"></i> <span class="align-middle">청강 신청 확인</span>
+						</a>
+					</li>
+
+					</li>
+
+					<li class="sidebar-header">
+						비교과/특강
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="{% url 'stud:index' %}">
+							<i class="align-middle" data-feather="grid"></i> <span class="align-middle">비교과/특강 신청</span>
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+		</nav>
 		<div class="main">
 			{% include "StudApp/navbar.html" %}
 			<main class="content">
@@ -51,17 +116,17 @@
 								<label class="form-label" style = "margin-bottom: 15px;">대학/학과</label>
 									
 									<select class="form-select mb-3">
-          <option selected>단과대학 선택</option>
-          <option>One</option>
-          <option>Two</option>
-          <option>Three</option>
+										<option selected>단과대학 선택</option>
+										<option>One</option>
+										<option>Two</option>
+										<option>Three</option>
 		  							</select>
 
 									<select class="form-select mb-3">
-          <option selected>학과/학부/전공 선택</option>
-          <option>One</option>
-          <option>Two</option>
-          <option>Three</option>
+										<option selected>학과/학부/전공 선택</option>
+										<option>One</option>
+										<option>Two</option>
+										<option>Three</option>
 									</select>
 
 									<hr class="my-0" />
@@ -73,46 +138,46 @@
 									
 									<div>
 										<label class="form-check" style="padding-bottom: 10px;">
-            <input class="form-check-input" type="checkbox" value="">
-            <span class="form-check-label">
-              1학년
-            </span>
-          </label>
+											<input class="form-check-input" type="checkbox" value="">
+											<span class="form-check-label">
+											1학년
+											</span>
+										</label>
 
 		  								<label class="form-check" style="padding-bottom: 10px;">
-            <input class="form-check-input" type="checkbox" value="">
-            <span class="form-check-label">
-              2학년
-            </span>
-          </label>
+											<input class="form-check-input" type="checkbox" value="">
+											<span class="form-check-label">
+											2학년
+											</span>
+										</label>
 		  
 		  								<label class="form-check" style="padding-bottom: 10px;">
-            <input class="form-check-input" type="checkbox" value="">
-            <span class="form-check-label">
-              3학년
-            </span>
-          </label>
+											<input class="form-check-input" type="checkbox" value="">
+											<span class="form-check-label">
+											3학년
+											</span>
+										</label>
 
 		  								<label class="form-check" style="padding-bottom: 10px;">
-            <input class="form-check-input" type="checkbox" value="">
-            <span class="form-check-label">
-              4학년
-            </span>
-          </label>
+											<input class="form-check-input" type="checkbox" value="">
+											<span class="form-check-label">
+											4학년
+											</span>
+										</label>
 
 		  								<label class="form-check" style="padding-bottom: 10px;">
-            <input class="form-check-input" type="checkbox" value="">
-            <span class="form-check-label">
-              5학년
-            </span>
-          </label>
+											<input class="form-check-input" type="checkbox" value="">
+											<span class="form-check-label">
+											5학년
+											</span>
+										</label>
 
 		  								<label class="form-check" style="padding-bottom: 10px;">
-            <input class="form-check-input" type="checkbox" value="">
-            <span class="form-check-label">
-              전체 학년
-            </span>
-          </label>							
+											<input class="form-check-input" type="checkbox" value="">
+											<span class="form-check-label">
+											전체 학년
+											</span>
+										</label>							
 									</div>
 									<hr class="my-0" />
 								</div>
@@ -121,18 +186,18 @@
 									<label class="form-label" style = "margin-bottom: 15px;">이수구분</label>
 									<div>
 										<label class="form-check" style="padding-bottom: 10px;">
-            <input class="form-check-input" type="checkbox" value="">
-            <span class="form-check-label">
-              전공
-            </span>
-          </label>
+											<input class="form-check-input" type="checkbox" value="">
+											<span class="form-check-label">
+											전공
+											</span>
+										</label>
 
 		  								<label class="form-check" style="padding-bottom: 10px;">
-            <input class="form-check-input" type="checkbox" value="">
-            <span class="form-check-label">
-              교양
-            </span>
-          </label>							
+											<input class="form-check-input" type="checkbox" value="">
+											<span class="form-check-label">
+											교양
+											</span>
+										</label>							
 									</div>
 									<hr class="my-0" />
 								</div>
@@ -161,18 +226,18 @@
 
 								<div>
 										<label class="form-check" style="padding-bottom: 10px;">
-            <input class="form-check-input" type="radio" value="option1" name="radios-example" checked>
-            <span class="form-check-label">
-              오름차순
-            </span>
-          </label>
+											<input class="form-check-input" type="radio" value="option1" name="radios-example" checked>
+											<span class="form-check-label">
+											오름차순
+											</span>
+										</label>
 
 		  								<label class="form-check" style="padding-bottom: 10px;">
-            <input class="form-check-input" type="radio" value="option1" name="radios-example" checked>
-            <span class="form-check-label">
-              내림차순
-            </span>
-          </label>
+											<input class="form-check-input" type="radio" value="option1" name="radios-example" checked>
+											<span class="form-check-label">
+											내림차순
+											</span>
+										</label>
 										
 									</div>
 									
