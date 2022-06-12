@@ -31,8 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'StudApp',
-    'ProfApp',
+    'StudApp.apps.StudappConfig',
+    'ProfApp.apps.ProfappConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
