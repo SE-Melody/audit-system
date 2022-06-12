@@ -12,12 +12,12 @@ class Stud(models.Model):
 
 class Apply(models.Model):
     id = models.IntegerField(primary_key=True)
-    unit = models.ForeignKey("ProfApp.Unit", on_delete=models.DO_NOTHING, blank=False, null=False)
-    student = models.ForeignKey(Stud, on_delete=models.DO_NOTHING, blank=False, null=False)
+    unit = models.ForeignKey("ProfApp.Unit", on_delete=models.DO_NOTHING, blank=True, null=True)
+    student = models.ForeignKey(Stud, on_delete=models.DO_NOTHING, blank=True, null=True)
     admin_mileage = models.IntegerField()
     apply_time = models.DateTimeField()
-    remain_semaster = models.IntegerField()
-    result = models.BooleanField(blank=True)
+    remain_semaster = models.IntegerField(blank=True, null=True)
+    result = models.BooleanField(blank=True, null=True)
     
     class Meta:
         managed = True
@@ -25,7 +25,7 @@ class Apply(models.Model):
 
 class Post(models.Model):
     id = models.IntegerField(primary_key=True)
-    subject = models.ForeignKey("ProfApp.Subject", on_delete=models.DO_NOTHING, blank=False, null=False)
+    subject = models.ForeignKey("ProfApp.Subject", on_delete=models.DO_NOTHING, blank=True, null=True)
     category = models.BooleanField()
     content = models.TextField()
     time = models.DateTimeField()
