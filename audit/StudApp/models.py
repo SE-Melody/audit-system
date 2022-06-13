@@ -11,7 +11,7 @@ class Stud(models.Model):
         db_table = 'stud'
 
 class Apply(models.Model):
-    id = models.IntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     unit = models.ForeignKey("ProfApp.Unit", on_delete=models.DO_NOTHING, blank=True, null=True)
     student = models.ForeignKey(Stud, on_delete=models.DO_NOTHING, blank=True, null=True)
     admin_mileage = models.IntegerField()
