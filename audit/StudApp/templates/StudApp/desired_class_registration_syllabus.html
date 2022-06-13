@@ -1,4 +1,4 @@
-### 2022.06.10 기록
+<!-- ### 2022.06.10 기록 -->
 
 {% load static %}
 <!DOCTYPE html>
@@ -421,22 +421,27 @@
 										</table>
 									
 									
-										
-											<div class="row" style="float:right">
+											<!-- form 추가 -->
+											<form method="post">
+												{% csrf_token %}
+
+												<div class="row" style="float:right">
 												
 													<div class="col-sm-6">
-													
-														<input type="text" class="form-control" placeholder="마일리지를 입력하세요." style="text-align: center">
+														<input type="text" class="form-control" placeholder="마일리지를 입력하세요." style="text-align: center"
+														name="admin_mileage" id="admin_mileage" pattern="[0-9]+">
 													</div>
 													<div class="col-sm-3" align="left" style = "margin-top: 4px;">
 														<h7>point</h7>
 													</div> 
 
 													<div class="col">
+														<!-- <button type="submit" class="btn btn-primary">베팅</button> -->
 														<input class="btn btn-primary" type="submit" value='베팅'/> 
 													</div>
 												
-											</div> 
+												</div> 
+											</form>
 									
 									<!--
 									<span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i> 6.65% </span>
