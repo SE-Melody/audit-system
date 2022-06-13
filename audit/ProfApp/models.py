@@ -11,6 +11,9 @@ class Prof(models.Model):
 
 class Subject(models.Model):
     id = models.IntegerField(primary_key=True)
+    name = models.CharField(max_length=50, null=True)
+    grade = models.IntegerField(blank=True, null=True)
+    prof_id = models.ForeignKey(Prof, models.DO_NOTHING, blank=True, null=True)
     unit_list = models.CharField(max_length=50)
 
     class Meta:
