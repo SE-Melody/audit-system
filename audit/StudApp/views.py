@@ -15,9 +15,15 @@ def reg_syl(request):
         form = BettingForm(request.POST)
         if form.is_valid():
             mileage = form.cleaned_data['admin_mileage']
+            hong = Stud.objects.get(id=1234567890)
+            deducted = hong.mileage - mileage
+            hong.mileage = deducted
+            hong.save()
+            
             # print(mileage)
             Apply = form.save(commit=False)
             Apply.apply_time = timezone.now()
+            Apply.student_id = hong.id
             Apply.save()
             context = {'mileage': mileage}
             return render(request, 'StudApp/desired_class_registration_syllabus.html', context)
