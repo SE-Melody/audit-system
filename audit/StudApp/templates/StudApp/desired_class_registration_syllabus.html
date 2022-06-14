@@ -28,9 +28,11 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 	<script>
 		// var mileage = {{mileage}};
+		var original = {{original}};
 		function showAlert() {
 			var mileage = document.getElementById( 'admin_mileage' ).value;
-			alert("소프트웨어공학 07주차에\n" + mileage + " point를 베팅하셨습니다");
+			var remaining = original - mileage
+			alert("소프트웨어공학 07주차에\n" + mileage + " point를 베팅하셨습니다\n남은 마일리지는 " + remaining + " point입니다.");
 		}
 	</script>
 </head>
