@@ -29,7 +29,8 @@
 	<script>
 		var mileage = {{mileage}};
 		function showAlert() {
-			alert("소프트웨어공학 07주차에\n" + mileage + " point를 베팅하셨습니다");
+			var mileage2 = document.getElementById( 'admin_mileage' ).value;
+			alert("소프트웨어공학 07주차에\n" + mileage2 + " point를 베팅하셨습니다");
 		}
 	</script>
 </head>
@@ -297,9 +298,8 @@
 											</div>
 										</div> -->
 									</div>
-									<h1 class="mt-1 mb-3">수업계획서 더미 img가 올라올 위치</h1>
 									<span class="align-middle">
-										<img src="img/icons/syllabus_example.png" class="avatar img-fluid rounded-circle">  &nbsp; </span>
+										<img src="{% static 'StudApp/img/dummy.png' %}" class="avatar img-fluid" style="width:100%; height:100%;">  &nbsp; </span>
 									<!--<div class="mb-0">
 										<span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> -3.65% </span>
 										<span class="text-muted">Since last week</span>
@@ -367,7 +367,7 @@
 									
 									
 											<!-- form 추가 -->
-											<form action="{% url 'stud:reg_syl'%}" method="post">
+											<form method="post" onsubmit="showAlert();">
 												{% csrf_token %}
 
 												<div class="row" style="float:right">
@@ -382,7 +382,7 @@
 
 													<div class="col">
 														<!-- <button type="submit" class="btn btn-primary">베팅</button> -->
-														<input class="btn btn-primary" type="submit" onclick="showAlert()" value='베팅'/> 
+														<input class="btn btn-primary" type="submit" value='베팅'/> 
 													</div>
 												
 												</div> 
@@ -436,10 +436,10 @@
 													<td class="text-center"><span style="color:gray"></span></td>
 													<td class="text-center"><label><input class="form-check-input" type="checkbox"></label></td>
 													<td class="text-center"><label><input class="form-check-input" type="checkbox"></label></td>
+													<td class="text-center"><label><input class="form-check-input" type="checkbox" onclick="return(false);"></label></td>
 													<td class="text-center"><label><input class="form-check-input" type="checkbox"></label></td>
-													<td class="text-center"><label><input class="form-check-input" type="checkbox"></label></td>
-													<td class="text-center"><label><input class="form-check-input" type="checkbox"></label></td>
-													<td class="text-center"><label><input class="form-check-input" type="checkbox"></label></td>
+													<td class="text-center"><label><input class="form-check-input" type="checkbox" onclick="return(false);"></label></td>
+													<td class="text-center"><label><input class="form-check-input" type="checkbox" onclick="return(false);"></label></td>
 													<td class="text-center"><label><input class="form-check-input" type="checkbox"></label></td>
 													<td class="text-center"><label><input class="form-check-input" type="checkbox"></label></td>
 													
@@ -482,8 +482,8 @@
 													<tr>
 														<td class="text-center"></td>
 														<td class="text-center"><label><input class="form-check-input" type="checkbox"></label></td>
-														<td class="text-center"><label><input class="form-check-input" type="checkbox"></label></td>
-														<td class="text-center"><label><input class="form-check-input" type="checkbox"></label></td>
+														<td class="text-center"><label><input class="form-check-input" type="checkbox" onclick="return(false);"></label></td>
+														<td class="text-center"><label><input class="form-check-input" type="checkbox" onclick="return(false);"></label></td>
 														<td class="text-center"><label><input class="form-check-input" type="checkbox"></label></td>
 														<td class="text-center"><label><input class="form-check-input" type="checkbox"></label></td>
 														<td class="text-center"><label><input class="form-check-input" type="checkbox"></label></td>
