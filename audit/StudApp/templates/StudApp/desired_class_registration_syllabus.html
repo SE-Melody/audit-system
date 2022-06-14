@@ -27,10 +27,10 @@
 	<link href="{% static 'StudApp/css/app.css' %}" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 	<script>
-		var mileage = {{mileage}};
+		// var mileage = {{mileage}};
 		function showAlert() {
-			var mileage2 = document.getElementById( 'admin_mileage' ).value;
-			alert("소프트웨어공학 07주차에\n" + mileage2 + " point를 베팅하셨습니다");
+			var mileage = document.getElementById( 'admin_mileage' ).value;
+			alert("소프트웨어공학 07주차에\n" + mileage + " point를 베팅하셨습니다");
 		}
 	</script>
 </head>
