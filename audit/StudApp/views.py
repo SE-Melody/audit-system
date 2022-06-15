@@ -5,7 +5,9 @@ from StudApp.forms import BettingForm
 from StudApp.models import Stud
 
 def index(request):
-    return render(request, 'StudApp/index.html')
+    hong = Stud.objects.get(id=1234567890)
+    context = {'mileage': hong.mileage}
+    return render(request, 'StudApp/index.html', context)
 
 def reg(request):
     hong = Stud.objects.get(id=1234567890)
