@@ -26,6 +26,8 @@
 
 	<link href="{% static 'StudApp/css/app.css' %}" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	
 	<script>
 		// var mileage = {{mileage}};
 		var original = {{original}};
@@ -518,14 +520,35 @@
 
 									<div class="col mt-1">
 										
+										<h7><strong>질문</strong>&nbsp&nbsp<p style="color:gray;">2022.04.06
+											6주차 수업 비대면인가요?	
+										</h7>
+	
+										<hr>
+										
+										
 										<h7><strong>질문</strong>&nbsp&nbsp<p style="color:gray;">2022.03.25
-										중간 발표 주차가 언제인가요?	
+											중간 발표 주차가 언제인가요?	
 										</h7>
 										<hr>
+										<div class="collapse" id="test1">
+											
+											<h7><strong>답변</strong>&nbsp&nbsp<p style="color:gray;">2022.03.18
+											4주차 수업 녹강입니다~~!	
+											</h7>
+											<hr>
+											<h7><strong>질문</strong>&nbsp&nbsp<p style="color:gray;">2022.03.15
+											청강 신청 완료 확인 어디서하나요?	
+											</h7>
+											
+											<hr>
+	
+											<h7><strong>답변</strong>&nbsp&nbsp<p style="color:gray;">2022.03.10
+											오리엔테이션 자료 LMS에 올라갔습니다~	
+											</h7>
+										</div>
 
-										<h7><strong>답변</strong>&nbsp&nbsp<p style="color:gray;">2022.03.18
-										4주차 수업 녹강입니다~~!	
-										</h7>
+										
 									</div>
 									<div class="row">
 										<!-- <div class="col-sm-auto"></div> -->
@@ -533,11 +556,12 @@
 											<!--
 											<div style="color:white; border: 1px solid blue; background-color:blue; padding:1px; border-radius:6px"> <h7>&nbsp&nbsp&nbsp더 불러오기&nbsp&nbsp&nbsp</h7> </div>
 											-->
-										<div class = "d-grid">
-											<input class="btn btn-primary" type="submit" value='더 불러오기'/> 
-										</div>
-												
 										
+											<!-- <input class="btn btn-primary" type="submit" value='더 불러오기'/> -->
+										<button data-bs-toggle="collapse" type="button" aria-expanded="true" data-bs-target="#test1" aria-controls="test1" class='badge btn-primary btn-sm'>
+											더 불러오기
+										</button>
+													
 									</div>
 
 								</div>
