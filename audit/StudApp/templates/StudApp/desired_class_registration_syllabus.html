@@ -32,7 +32,7 @@
 		function showAlert() {
 			var mileage = document.getElementById( 'admin_mileage' ).value;
 			var remaining = original - mileage
-			alert("소프트웨어공학 07주차에\n" + mileage + " point를 베팅하셨습니다\n남은 마일리지는 " + remaining + " point입니다.");
+			alert("소프트웨어공학 07주차에\n" + mileage + " point를 베팅하시겠습니까?");
 		}
 	</script>
 </head>
@@ -115,7 +115,7 @@
 			<div class= "center"> 주차 별 청강 시스템</div>
 				<div class="navbar-collapse collapse">
 					<ul class="navbar-nav navbar-align">
-					<span class="text-dark"> 현재는  &nbsp; &nbsp; &nbsp; 주차 입니다 </span>
+					<span class="text-dark"> 현재는 05주차 입니다<br>잔여 마일리지: {{original}}점</span>
 						<li class="nav-item dropdown">
 							<a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
 								<div class="position-relative">
@@ -359,10 +359,10 @@
 											</thead>
 											<tbody>
 												<tr>
-													<td class="text-center">04월 01일 09시~04월 08일 09시</td>
-													<td class="text-center">0/5명</td>
-													<td class="text-center">000명</td>
-													<td class="text-center">04월 08일 09시</td>
+													<td class="text-center">04월 15일 09시~04월 21일 09시</td>
+													<td class="text-center">0{{apply_num}}/05명</td>
+													<td class="text-center">010명</td>
+													<td class="text-center">04월 22일 09시</td>
 												</tr>
 											</tbody>
 										</table>
